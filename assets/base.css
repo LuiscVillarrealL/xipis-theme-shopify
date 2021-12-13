@@ -4,8 +4,20 @@
 .color-background-1 {
   --color-foreground: var(--color-base-text);
   --color-background: var(--color-base-background-1);
-  --gradient-background: var(--gradient-base-background-1);
+ /* --gradient-background: var(--gradient-xipis-background-1); */
+ /* --gradient-background:  linear-gradient(180deg, rgba(255,249,111,0.5087196264374122) 76%, rgba(1,219,214,0.2587196264374122) 92%); */
+ --xipis-celeste: var(--xipis-light-blue);
+ --xipis-amarillo:  var(--xipis-yellow);
+ --xipis-pink:  var(--xipis-pink);
+ --xipis-purple: var(--xipis-purple);
+ --xipis-light-orange:  var(--xipis-light-orange);
+ --xipis-orange:  var(--xipis-orange);
+ --xipis-aqua:  var(--xipis-aqua);
+ --xipis-green:  var(--xipis-green);
+ --xipi-gradient-background:  linear-gradient(0deg, rgba(var(--xipis-yellow),0.5087196264374122) 76%, rgba(var(--xipis-light-blue),0.2587196264374122) 92%);
 }
+
+
 
 .color-background-2 {
   --color-background: var(--color-base-background-2);
@@ -364,7 +376,7 @@ h5,
   font-style: var(--font-heading-style);
   font-weight: var(--font-heading-weight);
   letter-spacing: calc(var(--font-heading-scale) * 0.06rem);
-  color: rgb(var(--color-foreground));
+  color: rgb(var(--color-base-accent-1));
   line-height: calc(1 + 0.3 / max(1, var(--font-heading-scale)));
 }
 
@@ -865,6 +877,7 @@ summary::-webkit-details-marker {
 
 @media screen and (min-width: 750px) {
   .title-wrapper--self-padded-mobile {
+
     padding-left: 0;
     padding-right: 0;
   }
@@ -1174,6 +1187,7 @@ deferred-media {
 .button,
 .shopify-challenge__button,
 .customer button {
+  border-radius: 25px;
   cursor: pointer;
   display: inline-flex;
   justify-content: center;
@@ -1192,6 +1206,7 @@ deferred-media {
   transition: box-shadow var(--duration-short) ease;
   -webkit-appearance: none;
   appearance: none;
+  color: white
 }
 
 .button:focus-visible {
@@ -1221,6 +1236,7 @@ deferred-media {
 .shopify-challenge__button,
 .customer button {
   font-size: 1.5rem;
+  border-radius: 25px;
   letter-spacing: 0.1rem;
   line-height: calc(1 + 0.2 / var(--font-body-scale));
 }
@@ -2315,7 +2331,7 @@ details-disclosure > details {
 
 .gradient {
   background: var(--color-background);
-  background: var(--gradient-background);
+  background: var(--xipi-gradient-background);
   background-attachment: fixed;
 }
 

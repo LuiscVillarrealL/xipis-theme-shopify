@@ -60,7 +60,8 @@
   </div>
 
   <div class="card card--product{% if product_card_product.featured_media == nil %} card--text-only card--soft{% endif %}{% if product_card_product.featured_media != nil and show_image_outline %} card--outline{% endif %}" tabindex="-1">
-    <div class="card__inner">
+    
+    <div class="card__inner" style="cursor: pointer;" onclick="window.location='{{ product_card_product.url | default: '#' }}';">
       {%- if product_card_product.featured_media -%}
         {%- liquid
           assign featured_media_aspect_ratio = product_card_product.featured_media.aspect_ratio
@@ -89,7 +90,7 @@
               class="motion-reduce"
               width="{{ product_card_product.featured_media.width }}"
               height="{{ product_card_product.featured_media.height }}"
-            >
+            ></a>
 
             {%- if product_card_product.media[1] != nil and show_secondary_image -%}
               <img
@@ -114,9 +115,9 @@
       {%- else -%}
         <div class="card__content">
           <h2 class="card__text h3">
-            <a href="{{ product_card_product.url | default: '#' }}" class="full-unstyled-link">
+
               {{ product_card_product.title }}
-            </a>
+
           </h2>
         </div>
       {%- endif -%}

@@ -2,6 +2,7 @@
   display: flex;
   position: relative;
   flex-direction: column;
+  
 }
 
 @media screen and (max-width: 749px) {
@@ -198,6 +199,7 @@
 
 .banner__box {
   border: 0;
+  border-radius: 25px;
   padding: 4rem 3.5rem;
   position: relative;
   height: fit-content;

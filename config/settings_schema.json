@@ -15,11 +15,44 @@
         "content": "t:settings_schema.colors.settings.header__1.content"
       },
       {
+        "type": "header",
+        "content": "Xipi Colors"
+      },
+      {
         "type": "color",
-        "id": "colors_solid_button_labels",
-        "default": "#FFFFFF",
-        "label": "t:settings_schema.colors.settings.colors_solid_button_labels.label",
-        "info": "t:settings_schema.colors.settings.colors_solid_button_labels.info"
+        "id": "xipis_light_blue",
+        "label": "xipis light blue"
+
+      },
+      {
+        "id": "xipis_pink",
+        "type": "color",
+        "label": "xipis pink"
+      },
+      {
+        "id": "xipis_yellow",
+        "type": "color",
+        "label": "xipis yellow"
+      },
+      {
+        "id": "xipis_light_orange",
+        "type": "color",
+        "label": "xipis light orange"
+      },
+      {
+        "id": "xipis_orange",
+        "type": "color",
+        "label": "xipis orange"
+      },
+      {
+        "id": "xipis_aqua",
+        "type": "color",
+        "label": "xipis aqua"
+      },
+      {
+        "id": "xipis_green",
+        "type": "color",
+        "label": "xipis green"
       },
       {
         "type": "color",

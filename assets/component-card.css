@@ -1,3 +1,16 @@
+:root {
+ --xipis-celeste: var(--xipis-light-blue);
+ --xipis-amarillo:  var(--xipis-yellow);
+ --xipis-pink:  var(--xipis-pink);
+ --xipis-purple: var(--xipis-purple);
+ --xipis-light-orange:  var(--xipis-light-orange);
+ --xipis-orange:  var(--xipis-orange);
+ --xipis-aqua:  var(--xipis-aqua);
+ --xipis-green:  var(--xipis-green);
+ --xipi-gradient-background:  linear-gradient(0deg, rgba(var(--xipis-yellow),0.5087196264374122) 76%, rgba(var(--xipis-light-blue),0.2587196264374122) 92%);
+}
+
+
 .card {
   display: block;
   overflow: hidden;
@@ -15,8 +28,9 @@
 }
 
 .card.card--soft {
-  background-color: rgba(var(--color-foreground), 0.04);
+  background-color: rgba(var(--xipis-light-blue), 0.3);
   color: rgb(var(--color-foreground));
+  border-radius: 40px;
 }
 
 .card .icon-wrap {
@@ -94,11 +108,16 @@
   display: grid;
   grid-template-rows: 1fr auto 1fr;
   width: 100%;
+  border-radius: 25px;
+  background-color: var(--xipis-celeste) !important; 
 }
 
 .card__content {
   margin-left: 2.5rem;
   margin-right: 2.5rem;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
 }
 
 .card__content > * {
