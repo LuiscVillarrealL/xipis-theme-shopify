@@ -21,11 +21,6 @@
   margin-bottom: 1.3rem;
 }
 
-@media screen and (min-width: 750px) {
-  .card-information + .card {
-    margin-bottom: 1.7rem;
-  }
-}
 
 .card.card--soft {
   background-color: rgba(var(--xipis-light-blue), 0.3);
@@ -253,6 +248,24 @@
 
 .card__media-spacer {
   padding: 2rem 2rem 0;
+}
+
+
+@media screen and (max-width: 420px) {
+
+  body .card--text-only .card__content {
+    position: relative;
+    top: 50px;
+    left: 0;
+    margin-left: 10px;
+    /*margin: 0;
+    left: 10px; */
+}
+
+.card__content .h3{
+  white-space: nowrap;
+}
+
 }
 
 @media screen and (min-width: 750px) {
